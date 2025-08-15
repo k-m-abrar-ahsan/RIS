@@ -1,0 +1,39 @@
+/* Custom styles for the RIS Calculator application */
+
+/* Set the default font for the entire page */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Creates the multi-colored background for the gauge.
+  It's a conic gradient that transitions through four colors.
+*/
+.gauge-bg {
+    background: conic-gradient(
+        #ef4444 0deg 90deg,    /* Red */
+        #f97316 90deg 180deg,   /* Orange */
+        #eab308 180deg 270deg,  /* Yellow */
+        #84cc16 270deg 360deg   /* Green */
+    );
+}
+
+/* This is the "cover" that rotates to reveal the gauge background.
+  It uses a CSS variable `--progress` (set by JavaScript) to calculate the rotation.
+  The transition provides a smooth animation effect.
+*/
+.gauge-cover {
+    /* The background color should match the page's background */
+    background-color: #f9fafb; /* Corresponds to bg-gray-50 */
+    transition: transform 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    transform: rotate(calc(1deg * (100 - var(--progress, 0)) * 1.8));
+}
+
+/* A simple fade-in animation for the results section */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.5s ease-out forwards;
+}

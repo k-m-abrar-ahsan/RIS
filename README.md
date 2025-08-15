@@ -64,14 +64,14 @@ Despite being an interesting and fun conceptual approach, the RIS algorithm has 
 
 The Romantic Interest Score Calculator is an **educational project** that demonstrates how **qualitative** text data can be converted into **quantitative** metrics.
 
-> ⚠️ It is **not** a reliable tool for making decisions about personal relationships.
+>  It is **not** a reliable tool for making decisions about personal relationships.
 
 Use it to **learn**, **experiment with the logic**, and **modify the weights**, but always remember:  
 **Real communication is more important than any numerical score.**
 
 ---
 
-### 💡 Suggested Next Steps
+### Suggested Next Steps
 
 - Tweak the weights to see how the RIS changes.
 - Expand the keyword lists to support different cultures or languages.

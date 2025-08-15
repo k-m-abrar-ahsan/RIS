@@ -4,7 +4,7 @@ This document outlines the **mathematical formulas**, **logical flow**, and **te
 
 ---
 
-## 🧮 1. Overall Formula: Weighted Sum
+## 1. Overall Formula: Weighted Sum
 
 The final RIS is computed as a **weighted sum** of six normalized metrics:
 
@@ -21,7 +21,7 @@ Where:
 
 All **weights** sum to 1:
 
-## 🔧 2. Individual Metric Calculations
+## 2. Individual Metric Calculations
 
 | Metric | Formula |
 |-------|--------|
@@ -34,7 +34,7 @@ All **weights** sum to 1:
 
 ---
 
-## ⚠️ 3. Weaknesses & Limitations
+##  3. Weaknesses & Limitations
 
 Despite being an interesting and fun conceptual approach, the RIS algorithm has **significant limitations**:
 
@@ -47,7 +47,7 @@ Despite being an interesting and fun conceptual approach, the RIS algorithm has 
 
 ---
 
-## 🛠️ 4. Technical Implementation
+##  4. Technical Implementation
 
 | Area | Description |
 |------|------------|
@@ -60,7 +60,7 @@ Despite being an interesting and fun conceptual approach, the RIS algorithm has 
 
 ---
 
-## ✅ 5. Conclusion
+##  5. Conclusion
 
 The Romantic Interest Score Calculator is an **educational project** that demonstrates how **qualitative** text data can be converted into **quantitative** metrics.
 

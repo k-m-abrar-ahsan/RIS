@@ -24,15 +24,14 @@ All **weights** sum to 1:
 ## 2. Individual Metric Calculations
 
 | Metric | Formula |
-|-------|--------|
-| **a. Sentiment Score (S)** | `S = (4 × S_avg + 2) / 6` |
-| **b. Romantic Keyword Score (K)** | `K = min(1.0, (|M_their| / C_K) × 5)` |
-| **c. Initiation Ratio (I)** | `I = (Conversations initiated by them) / (Total conversations)` |
-| **d. Question Score (Q)** | `Q = min(1.0, (|M_their| / C_Q) × 3)` |
-| **e. Response Velocity (V)** | `V = max(0, 1 − 180 / t_avg)` |
-| **f. Effort Balance (E)** | `E = 1 − (1 − (L_you / L_them))` |
+|--------|---------|
+| **a. Sentiment Score (S)** | S = ( (Σ sentiment(w) / W) + 2 ) / 4 |
+| **b. Romantic Keyword Score (K)** | K = min(1.0, (5 × K_count) / M_their) |
+| **c. Initiation Ratio (I)** | I = Initiations_them / (Initiations_you + Initiations_them) |
+| **d. Question Score (Q)** | Q = min(1.0, (3 × Q_count) / M_their) |
+| **e. Response Velocity (V)** | V = max(0, 1 − (AvgReplyMinutes / 180)) |
+| **f. Effort Balance (E)** | E = 1 − |1 − (L_them / L_you)| |
 
----
 
 ##  3. Weaknesses & Limitations
 

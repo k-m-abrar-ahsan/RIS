@@ -79,3 +79,4 @@ Use it to **learn**, **experiment with the logic**, and **modify the weights**, 
 ---
 
 **Enjoy exploring how algorithms interpret human interactions — responsibly and thoughtfully!**
+Explore the App here: https://risv2.netlify.app/ 
